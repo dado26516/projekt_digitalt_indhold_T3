@@ -103,7 +103,7 @@
 	position: sticky;
 	top: 0;
     border-bottom: solid black 2px;
-    background-color: var(--white);
+    background-color: var(--grey);
 
     display: grid;
     grid-template-columns: 1fr 3fr;
