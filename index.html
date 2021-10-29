@@ -32,7 +32,7 @@
                         Hjælp os med at skalere vores succes.
                     </h1>
 
-                    <a href="./content/views/tilmeld.html" class="header-img-btn">
+                    <a href="./content/views/tilmeld.html" class="btn">
                         Tilmeld dig her!
                     </a>
                 </div>
@@ -42,7 +42,9 @@
         </section>
     </header>
 
-    <nav class="nav">
+    <div class="sticky-nav">
+
+    <nav class="nav wrap">
         <div class="logo-wtext">
             <img class="img-fluid" src="./content/GFX/logo_tekst.png" alt="Logo billede">
         </div>
@@ -53,7 +55,7 @@
                 <a href="#top">Forside</a>
             </li>
             <li>
-                <a href="">Begivenheder</a>
+                <a href="">Medlemmer</a>
             </li>
             <li>
                 <a href="">Om os</a>
@@ -71,6 +73,8 @@
         </ul>
     </nav>
 
+    </div>
+
     <section class="golden-circle">
       <div class="circle">
 
@@ -83,33 +87,35 @@
       </div>
     </section>
 
-    <section class="events">
-        <h2 class="event-title">Vores medlemmer siger</h2>
-        <p class="event-text">Hos Støtteforeningen for Retshjælpen Fyn er vores medlemmer vigtige. Det er dig som medlem, der gør forskellen. Derfor betyder din og andre medlemmers feedback meget for os. Det er det, det er med til at gøre os endnu bedre.</p>
+    <div class="members-bg">
 
-        <div class="event-container">
-            <div class="event-box">
+    <section class="members wrap">
+        <h2>Vores medlemmer siger</h2>
+        <p class="member-text">Hos Støtteforeningen for Retshjælpen Fyn er vores medlemmer vigtige. Det er dig som medlem, der gør forskellen. Derfor betyder din og andre medlemmers feedback meget for os. Det er det, det er med til at gøre os endnu bedre.</p>
+
+        <div class="member-container">
+            <div class="member-box">
                 <div>
                     <img src="https://www.fillmurray.com/400/300" alt="image1">
                 </div>
-                <h3 class="event-text">Overskrift</h3>
+                <h3 class="member-text">Overskrift</h3>
                 <p>beskrivende tekst</p>
             </div>
 
 
-            <div class="event-box">
+            <div class="member-box">
                 <div>
                     <img src="https://www.fillmurray.com/400/300" alt="image1">
                 </div>
-                <h3 class="event-text">Overskrift</h3>
+                <h3 class="member-text">Overskrift</h3>
                 <p>beskrivende tekst</p>
             </div>
 
-            <div class="event-box">
+            <div class="member-box">
                 <div>
                     <img src="https://www.fillmurray.com/400/300" alt="image1">
                 </div>
-                <h3 class="event-text">Overskrift</h3>
+                <h3 class="member-text">Overskrift</h3>
                 <p>beskrivende tekst</p>
             </div>
 
@@ -118,9 +124,11 @@
 
     </section>
 
+    </div>
 
 
-    <section class="about-us-wrapper">
+
+    <section class="about-us-wrapper wrap">
         <div>
             <h2>Om os</h2>
             <p>Støtteforeningen hjælper også med at nå ud til udsatte borgere, der ikke normalvis ville opsøge
@@ -145,11 +153,35 @@
         </div>
     </section>
 
-    <section class="contact-wrapper">
-      <div>
+    <div class="contact-bg">
+
+    <section class="contact-wrapper wrap">
+      <div class="contact-formular">
         <h2>Kontakt</h2>
+
+        <input class="w100" type="email" name="email" placeholder="E-mail">
+        <input class="w100" type="text" name="emne" placeholder="Emne">
+        <textarea class="w100" name="besked" rows="8" cols="80" placeholder="Besked"></textarea>
+
+      <div>
+        <a href="mailto:" class="btn">
+            Send
+        </a>
+
+        <p>* Vi svarer inden for 2-3 arbejdsdage</p>
+
+      <div class="clear"></div>
+
       </div>
+      </div>
+
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9841.36903226878!2d10.427057772303549!3d55.410653093707566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d1f7b282bf5e7%3A0x6238ac465038585!2sRisingsvej%20132%2C%205000%20Odense!5e0!3m2!1sen!2sdk!4v1635498954903!5m2!1sen!2sdk" class="w100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
     </section>
+
+    </div>
 
 
 </body>

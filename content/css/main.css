@@ -24,8 +24,13 @@
     --white: #fdfdfd;
 }
 
-.img-fluid {
+.img-fluid, .w100 {
     width: 100%;
+}
+
+.wrap {
+  width: 88%;
+  margin: auto;
 }
 
 body {
@@ -43,9 +48,10 @@ h1{
 
 }
 
-/* h2{
-
-} */
+h2{
+  font-weight: 400;
+  font-size: 38px;
+}
 
 /* h3 {
 
@@ -78,7 +84,7 @@ h6 {
 
 .header-img {
     position: relative;
-
+    height: 90vh;
 }
 
 .header-img-overlay {
@@ -125,7 +131,7 @@ h6 {
 
 }
 
-.header-img-btn {
+.btn {
     padding: 10px 40px;
     border: none;
     border-radius: 6px;
@@ -136,7 +142,7 @@ h6 {
     transition: .2s;
 }
 
-.header-img-btn:hover {
+.btn:hover {
     padding: 12px 42px;
     font-size: 29px;
 }
@@ -147,23 +153,24 @@ h6 {
 
 /* #region nav */
 
+.sticky-nav {
+  position: sticky;
+	top: -2px;
+  border-bottom: solid black 2px;
+  background-color: var(--white);
+}
+
 .nav {
-	position: sticky;
-	top: 0;
-    border-bottom: solid black 2px;
-    background-color: var(--white);
-
-    display: grid;
+	  display: grid;
     grid-template-columns: 2fr 12fr;
-
+    grid-gap: 10%;
 
 }
 
 .nav ul {
     list-style-type: none;
-
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -197,8 +204,7 @@ h6 {
 
 .logo-wtext {
     display: flex;
-    align-items: center;
-    padding: 10px 0 10px 60px;
+    padding: 10px 0;
 }
 /* #endregion */
 .golden-circle {
@@ -239,12 +245,15 @@ h6 {
 /* #endregion */
 
 
-.events {
+.members-bg {
+  background-color: var(--white);
+}
+
+.members {
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--white);
     padding: 5%;
     color: var(--black);
     text-align: center;
@@ -252,15 +261,12 @@ h6 {
 
 
 }
-.event-title {
-    font-size: 26px;
 
-}
-.event-text {
+.member-text {
     margin-top: 2.5%;
 }
 
-.event-container {
+.member-container {
     display: flex;
     flex-direction: row;
     gap: 1%;
@@ -269,7 +275,7 @@ h6 {
 
 }
 
-.event-box {
+.member-box {
  background-color: deeppink;
  height: 500px;
  width: 400px;
@@ -279,10 +285,44 @@ h6 {
 .about-us-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 5% 10% ;
     gap: 25%;
 }
 
-.contact-wrapper {
+.contact-bg {
   background-color: var(--blue);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+  grid-gap: 10vw;
+  height: 55vh;
+}
+
+.contact-wrapper h2, .contact-wrapper p {
+  color: var(--white);
+}
+
+.contact-wrapper p {
+  text-align: right;
+  
+}
+
+.clear {
+  clear: both;
+}
+
+.contact-formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contact-formular input, .contact-formular textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
 }
