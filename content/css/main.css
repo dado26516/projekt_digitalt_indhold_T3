@@ -306,7 +306,7 @@ h6 {
 
 .contact-wrapper p {
   text-align: right;
-  
+
 }
 
 .clear {
@@ -325,4 +325,19 @@ h6 {
   border-radius: 6px;
   border: none;
   box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
+}
+
+.footer-text {
+  background-color: var(--grey);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 36%;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer {
+  height: 20vh;
 }
