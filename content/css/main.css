@@ -77,7 +77,7 @@ h6 {
 /* #region  header-img */
 
 .header-img img {
-    object-fit: cover;
+  object-fit: cover;
     height: 90vh;
     width: 100%;
 }
@@ -110,13 +110,6 @@ h6 {
     align-items: center;
     justify-content: center;
 
-
-}
-
-.header-img-logo img {
-
-   width: 200px;
-   height: 200px;
 
 }
 
@@ -154,10 +147,8 @@ h6 {
 /* #region nav */
 
 .sticky-nav {
-  position: sticky;
+  position: fixed;
 	top: -2px;
-  border-bottom: solid black 2px;
-  background-color: var(--white);
 }
 
 .nav {
@@ -184,7 +175,7 @@ h6 {
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
-
+    color: var(--white);
 }
 
 .nav-btn-signup a {
