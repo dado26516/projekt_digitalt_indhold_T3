@@ -39,7 +39,7 @@ body {
 }
 
 a {
-    color: var(--black);
+  color: var(--black);
 }
 
 h1{
@@ -146,9 +146,10 @@ h6 {
 
 /* #region nav */
 
-.sticky-nav {
+#sticky-nav {
   position: fixed;
 	top: -2px;
+  background-color: var(--white);
 }
 
 .nav {
@@ -163,11 +164,12 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav li {
     display: inline;
-
+    
 }
 
 .nav ul li a {
@@ -175,7 +177,7 @@ h6 {
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
-    color: var(--white);
+    color: var(--black);
 }
 
 .nav-btn-signup a {
@@ -287,8 +289,8 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px 0;
-  grid-gap: 10vw;
-  height: 55vh;
+  grid-gap: 12%;
+  height: 100%;
 }
 
 .contact-wrapper h2, .contact-wrapper p {
@@ -312,6 +314,7 @@ h6 {
 }
 
 .contact-formular input, .contact-formular textarea {
+  margin: 10px;
   padding: 10px;
   border-radius: 6px;
   border: none;
