@@ -162,9 +162,10 @@ p {
 
 #sticky-nav {
   position: fixed;
-	top: -2px;
+	top: 0;
   background-color: var(--white);
   z-index: 2;
+  height: 10vh;
 }
 
 .nav {
