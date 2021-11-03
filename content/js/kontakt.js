@@ -7,18 +7,19 @@ var emptyMail = document.getElementById("wrong-mail");
 var emptySubject = document.getElementById("wrong-mail");
 const textColor = "red";
 
+
 function kontaktForm() {
-
+    
     if (email.value.length == 0 && emne.value.length == 0) {
-
+alert("yes")
         //tekst mail
         emptyMail.innerHTML = empty[1];
-        emptyMail.style.textAlign = "left";
+        emptyMail.style.textAlign = right;
         emptyMail.style.color = textColor;
 
         //tekst emne
         emptySubject.innerHTML = empty[0];
-        emptySubject.style.textAlign = right";
+        emptySubject.style.textAlign = right;
         emptySubject.style.color = textColor;
 
         //console.log("email og emne mangler");
@@ -33,7 +34,7 @@ function kontaktForm() {
         //console.log("emne mangler");
 
         emptySubject.innerHTML = empty[0];
-        emptySubject.style.textAlign = "left";
+        emptySubject.style.textAlign = right;
 
 
         //border
@@ -51,7 +52,7 @@ function kontaktForm() {
         emne.style.border = borderColors[1];
 
         emptyMail.innerHTML = empty[1];
-        emptyMail.style.textAlign = "left";
+        emptyMail.style.textAlign = right;
         emptyMail.style.color = textColor;
 
 

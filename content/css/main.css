@@ -246,8 +246,7 @@ p {
   width: 85%;
 }
 
-/* #endregion */
-
+/* #region members */
 
 
 .members-bg {
@@ -318,6 +317,11 @@ figcaption {
 }
 
 /* #endregion */
+
+
+
+/* #region about us */
+
 .about-us-wrapper {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -383,6 +387,12 @@ figcaption {
   border-radius: 6px;
 }
 
+
+/* #endregion */
+
+
+/* #endregion */
+
 .footer-text {
   background-color: var(--grey);
   display: grid;
@@ -425,3 +435,90 @@ figcaption {
 .footer {
   height: 20vh;
 }
+
+
+/* #region tilmelding */
+
+main {
+  min-height: 70vh;
+  background-image: url(../GFX/background_blue.jpg.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  
+}
+
+
+.signup-headline {
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+.signup-headline span {
+  color: var(--white);
+}
+
+
+.signup-wrapper {
+  background-color: hotpink;
+  display: grid;
+  grid-template-columns: 100fr 80fr;
+  text-align: center;
+
+  
+}
+
+.signup-box {
+  padding: 50px 20px;
+  background-color: var(--grey);
+  border-radius: 8px;
+}
+
+.signup-grid {
+  
+  
+  display: grid;
+  grid-template-areas:
+  'fnavn fnavn enavn enavn'
+  'mail mail mail mail'
+  "pass pass pass pass"
+  "check agree agree agree"
+  ;
+  grid-gap: 10px;
+  
+}
+
+.signup-checkbox {
+  text-align: left;
+}
+
+
+
+.item1 { grid-area: fnavn; }
+.item2 { grid-area: enavn; }
+.item3 { grid-area: mail; }
+.item4 { grid-area: pass; }
+.item5 { grid-area: check; }
+.item6 { 
+  grid-area: agree;
+  text-align: left;
+
+ }
+
+
+
+
+
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+
+
