@@ -12,10 +12,10 @@
     <script src="./content/js/kontakt.js"defer></script>
 </head>
 
-<body>
+<body id="top">
 
     <header>
-        <section id="top" class="header-img">
+        <section class="header-img">
             <img class="img-fluid" src="./content/Img/forside.jpg" alt="forside billede">
 
             <!-- opacity mørk baggrund -->
@@ -53,19 +53,19 @@
                     <a href="#top">Forside</a>
                 </li>
                 <li>
-                    <a href="">Medlemmer</a>
+                    <a href="#members">Medlemmer</a>
                 </li>
                 <li>
-                    <a href="">Om os</a>
+                    <a href="#about">Om os</a>
                 </li>
                 <li>
-                    <a href="">Kontakt</a>
+                    <a href="#contact">Kontakt</a>
                 </li>
                 <li>
-                    <a href="">Log ind</a>
+                    <a href="#">Log ind</a>
                 </li>
                 <li class="nav-btn-signup">
-                    <a href="">Tilmeld</a>
+                    <a href="./content/views/tilmeld.html">Tilmeld</a>
                 </li>
 
             </ul>
@@ -73,23 +73,30 @@
 
     </div>
 
-</section>
-
 
     <section class="golden-circle">
-        <div class="circle">
-            <div> <img src="./content/img/background.jpg" alt="background" style="width:100%;"></div>
-            <p class="golden-circle-title">Støtteforeningen</p>
-            <p class="golden-circle-text">Støtteforeningen hjælper også med at nå ud til <br> udsatte borgere, der ikke
-                normalvis ville opsøge <br>
-                retshjælpen,
-                blandt andet fordi de ikke er klar over at <br> der forefindes et juridisk problem.
-            </p>
-        </div>
+            <div class="golden-circle-img"> <img src="./content/img/background.jpg" alt="background" class="img-fluid"></div>
+            <div class="golden-circle-content">
+              <div>
+                <h2>Støtteforeningen</h2>
+                <p>Støtteforeningen hjælper også med at nå ud til <br> udsatte borgere, der ikke
+                  normalvis ville opsøge <br>
+                  retshjælpen,
+                  blandt andet fordi de ikke er klar over at <br> der forefindes et juridisk problem.
+                </p> <br><br><br>
+                <p>Dig er din hjælp og støtte</p><br>
+                <p>Støtteforeningen støtter retshjælpen</p><br>
+                <p>Retshjælpen Fyn yder bistand til udsatte borgere, vha. juridisk rådovning fra jura studerende</p><br>
+                <p>De frivillige i retshjælpen er primært jura studerende fra SDU.</p><br>
+                <p>Det frivillige og vigtige arbejde hjælper nye jurister med erfaringer og kompetencer</p><br>
+                <p>Færdiguddannet jurister har både et større netværk, til dig og din virksomhed og har fået stor læring med</p><br>
+              </div>
+            <img class="img-fluid align-circle" src="./content/img/cirkel_nocolor.png" alt="">
+            </div>
     </section>
 
 
-    <div class="members-bg">
+    <div id="members" class="members-bg">
 
         <section class="members wrap">
           <div>
@@ -146,7 +153,7 @@
 
 
 
-    <section class="about-us-wrapper wrap">
+    <section id="about" class="about-us-wrapper wrap">
         <div>
             <h2>Om os</h2>
             <p>Støtteforeningen hjælper også med at nå ud til udsatte borgere, der ikke normalvis ville opsøge
@@ -164,7 +171,8 @@
         </div>
         <div class="about-us-list">
             <p>
-              <span>Det du støtter:</span> <br>
+              <span>Det du støtter:</span>
+            </p>
               <ul>
                 <li>Gratis rådgivning</li>
                 <li>Gratis sagsbehandling</li>
@@ -174,13 +182,15 @@
         </div>
     </section>
 
-    <div class="contact-bg">
+    <div id="contact" class="contact-bg">
 
         <section class="contact-wrapper wrap">
             <div class="contact-formular">
                 <h2>Kontakt</h2>
 
+                <p id="wrong-mail"></p>
                 <input class="w100" id="email" type="email" name="email" placeholder="E-mail">
+                <p id="wrong-subject"></p>
                 <input class="w100" type="text" name="emne" placeholder="Emne">
                 <textarea class="w100" name="besked" rows="8" cols="80" placeholder="Besked"></textarea>
 
@@ -211,8 +221,8 @@
         <div class="footer-text">
             <div>
                 <p>Jørgen Peter Holst</p>
-                <p>+45 61 73 70 43</p>
-                <p>jph@retshjaelpenfyn.dk</p>
+                <a href="tel:"><p>+45 61 73 70 43</p></a>
+                <a href="mailto:"><p>jph@retshjaelpenfyn.dk</p></a>
             </div>
 
             <div>
@@ -222,8 +232,15 @@
             </div>
 
             <div>
-                <a href="" target="_blank"><i class=" fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="" target="_blank"><i class=" fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="" target="_blank">
+                  <i class=" fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                  Facebook
+                </a>
+
+                <a href="" target="_blank">
+                  <i class=" fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                  LinkedIn
+                </a>
             </div>
         </div>
 
