@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+    <script src="../js/tilmeld.js" defer></script>
 
 </head>
 
@@ -59,18 +59,18 @@
 
 
             <section class="signup-box">
-
+                <p id="error"></p>
                 <div class="signup-grid">
 
-                    <input class="item1" type="text" placeholder="Fornavn">
-                    <input class="item2" type="text" placeholder="Efternavn">
-                    <input class="item3" type="text" placeholder="Email eller telefonnummmer">
-                    <input class="item4" type="password" placeholder="Opret adgangskode">
+                    <input id="name" class="item1" type="text" placeholder="Fornavn">
+                    <input id="surname" class="item2" type="text" placeholder="Efternavn">
+                    <input id="mail" class="item3" type="text" placeholder="Email eller telefonnummmer">
+                    <input id="password" class="item4" type="password" placeholder="Opret adgangskode">
                     
                 </div>
 
                 <div class="signup-checkbox">
-                    <input type="checkbox">
+                    <input id="checkbox"type="checkbox">
                     <label for="agreements">Jeg har læst og forstået betingelser</label>
                 </div>
 
@@ -130,7 +130,7 @@
 
                 <p>Når du accepterer...</p>
                 <div style="margin-top: 20px;">
-                    <a class="btn" >Tilmeld</a>
+                    <a id="signup_btn" onclick="check()" class="btn" >Tilmeld</a>
                 </div>
 
 
