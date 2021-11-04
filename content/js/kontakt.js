@@ -4,7 +4,7 @@ var right = "left";
 var borderColors = ["3px solid red", "2px solid grey"];
 var empty = ["Mangler emne", "Mangler Mail"];
 var emptyMail = document.getElementById("wrong-mail");
-var emptySubject = document.getElementById("wrong-mail");
+var emptySubject = document.getElementById("wrong-subject");
 const textColor = "red";
 
 
@@ -35,7 +35,7 @@ function kontaktForm() {
 
         emptySubject.innerHTML = empty[0];
         emptySubject.style.textAlign = right;
-
+        emptySubject.style.color = textColor;
 
         //border
         email.style.border = borderColors[1];
@@ -76,4 +76,3 @@ function kontaktForm() {
 for (var i = 0; 0 > borderColors.length; i++) {
     console.log(borderColors[i]);
 }
-
