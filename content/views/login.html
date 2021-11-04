@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+    <script src="../js/login.js" defer></script>
 
 </head>
 
@@ -62,15 +62,17 @@
 
                 <div class="login-grid">
 
-                    <input class="login-item1" type="text" placeholder="brugernavn eller email">
-                    <input class="login-item2" type="password" placeholder="password">
-                    
+                    <input id="username" class="login-item1" type="text" placeholder="brugernavn eller email">
+                    <input id="password" class="login-item2" type="password" placeholder="password">
+
                 </div>
-             
+
+                <p id="error" style="color: red;"></p>
+
                 <div style="margin-top: 20px; margin-bottom: 10px;">
-                    <a class="btn" >Login</a>
+                    <a id="login_btn" class="btn" onclick="checkLogin()">Login</a>
                 </div>
-                <a href="#">Glemt adgangskode </a> 
+                <a href="#">Glemt adgangskode </a>
 
                 <div>
                     <br>
