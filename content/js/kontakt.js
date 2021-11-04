@@ -9,9 +9,9 @@ const textColor = "red";
 
 
 function kontaktForm() {
-    
+
     if (email.value.length == 0 && emne.value.length == 0) {
-alert("yes")
+
         //tekst mail
         emptyMail.innerHTML = empty[1];
         emptyMail.style.textAlign = right;
@@ -73,3 +73,6 @@ alert("yes")
     }
 }
 
+for (var i = 0; 0 > borderColors.length; i++) {
+    console.log(borderColors[i]);
+}
