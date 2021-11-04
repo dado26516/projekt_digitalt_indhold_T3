@@ -76,3 +76,4 @@ function kontaktForm() {
 for (var i = 0; 0 > borderColors.length; i++) {
     console.log(borderColors[i]);
 }
+

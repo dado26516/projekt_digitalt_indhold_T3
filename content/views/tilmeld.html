@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
+
 
 </head>
+
 <body>
     <header></header>
     <div id="sticky-nav">
@@ -24,22 +26,22 @@
             <ul>
 
                 <li>
-                    <a href="#top">Forside</a>
+                    <a href="../../index.html#top">Forside</a>
                 </li>
                 <li>
-                    <a href="#members">Medlemmer</a>
+                    <a href="../../index.html#members">Medlemmer</a>
                 </li>
                 <li>
-                    <a href="#about">Om os</a>
+                    <a href="../../index.html#about">Om os</a>
                 </li>
                 <li>
-                    <a href="#contact">Kontakt</a>
+                    <a href="../../index.html#contact">Kontakt</a>
                 </li>
                 <li>
-                    <a href="#">Log ind</a>
+                    <a href="./login.html">Log ind</a>
                 </li>
                 <li class="nav-btn-signup">
-                    <a href="./content/views/tilmeld.html">Tilmeld</a>
+                    <a href="./tilmeld.html">Tilmeld</a>
                 </li>
 
             </ul>
@@ -47,44 +49,102 @@
 
     </div>
 
-<main>
+    <main>
 
 
-    <h1 class="signup-headline"> <span>Støtteforeningen </span>  Retshjælpen Fyns venner</h1>
+        <h1 class="signup-headline"> <span>Støtteforeningen </span> Retshjælpen Fyns venner</h1>
 
 
-    <article class="signup-wrapper wrap">
+        <article class="signup-wrapper wrap">
 
 
-        <section class="signup-box">
+            <section class="signup-box">
 
-            <div class="signup-grid">
+                <div class="signup-grid">
 
-                <input class="item1" type="text" placeholder="Fornavn">
-                <input class="item2" type="text" placeholder="Efternavn">
-                <input class="item3" type="text" placeholder="Email eller telefonnummmer">
-                <input class="item4" type="password" placeholder="Opret adgangskode">
-            </div>
-<div class="signup-checkbox">
-    
-    <input  type="checkbox">
-    <label  for="agreements">Jeg har læst og forstået betingelser</label>
-</div>
+                    <input class="item1" type="text" placeholder="Fornavn">
+                    <input class="item2" type="text" placeholder="Efternavn">
+                    <input class="item3" type="text" placeholder="Email eller telefonnummmer">
+                    <input class="item4" type="password" placeholder="Opret adgangskode">
+                    
+                </div>
 
-
-            
-
-        </section>
-
-        <section>
-            <h2>teksst</h2>
-
-        </section>
+                <div class="signup-checkbox">
+                    <input type="checkbox">
+                    <label for="agreements">Jeg har læst og forstået betingelser</label>
+                </div>
 
 
-    </article>
+                <div>
+                    <h6>Fødselsdag </h6>
 
-</main>
+                    <select name="date">
+                        <option value="date" disabled selected>vælg dato</option>
+                        <option value="01">01 </option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <select name="month">
+                        <option value="month" disabled selected>vælg måned</option>
+                        <option value="01">Januar </option>
+                        <option value="02">Februar</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <input type="text" placeholder="Årstal">
+
+                    <!-- <input type="date" id="date" > -->
+                    <!-- <button onclick="getDate()">tryk her</button> -->
+
+                </div>
+
+                <div>
+                    
+                    <input type="radio" name="gender">
+                    <label>Mand</label>
+                    <input type="radio" name="gender">
+                    <label>Kvinde</label>
+                    <input type="radio" name="gender">
+                    <label>Andet</label>
+                
+                </div>
+
+                <p>Når du accepterer...</p>
+                <div style="margin-top: 20px;">
+                    <a class="btn" >Tilmeld</a>
+                </div>
+
+
+            </section>
+
+            <section>
+                <h2>teksst</h2>
+
+            </section>
+
+        </article>
+        <p>Eller login med MitId</p>
+
+    </main>
 
 
 
@@ -95,8 +155,12 @@
         <div class="footer-text">
             <div>
                 <p>Jørgen Peter Holst</p>
-                <a href="tel:"><p>+45 61 73 70 43</p></a>
-                <a href="mailto:"><p>jph@retshjaelpenfyn.dk</p></a>
+                <a href="tel:">
+                    <p>+45 61 73 70 43</p>
+                </a>
+                <a href="mailto:">
+                    <p>jph@retshjaelpenfyn.dk</p>
+                </a>
             </div>
 
             <div>
@@ -106,14 +170,14 @@
             </div>
 
             <div>
-                <a href="" target="_blank">
-                  <i class=" fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-                  Facebook
+                <a href="http://www.facebook.com" target="_blank">
+                    <i class=" fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                    Facebook
                 </a>
 
-                <a href="" target="_blank">
-                  <i class=" fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-                  LinkedIn
+                <a href="https://www.linked.com" target="_blank">
+                    <i class=" fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                    LinkedIn
                 </a>
             </div>
         </div>
@@ -126,4 +190,5 @@
 
 
 </body>
+
 </html>

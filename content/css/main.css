@@ -147,6 +147,7 @@ p {
     font-size: 28px;
     text-decoration: none;
     transition: .2s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -512,7 +513,60 @@ main {
 
 
 
+/* #region login */
 
+
+.login-headline {
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+.login-headline span {
+  color: var(--white);
+}
+
+
+.login-wrapper {
+  background-color: hotpink;
+  display: grid;
+  grid-template-columns: 100fr 80fr;
+  text-align: center;
+
+  
+}
+
+.login-box {
+  padding: 50px 20px;
+  background-color: var(--grey);
+  border-radius: 8px;
+}
+
+.login-grid {
+  
+  
+  display: grid;
+  grid-template-areas:
+  'bnavn bnavn bnavn bnavn'
+  'mail mail mail mail'
+  "pass pass pass pass"
+  "check agree agree agree"
+  ;
+  grid-gap: 10px;
+  
+}
+
+.login-checkbox {
+  text-align: left;
+}
+
+
+
+.login-item1 { grid-area: bnavn; }
+.login-item2 { grid-area: pass; }
+
+
+
+/* #endregion */
 
 
 
