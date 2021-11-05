@@ -330,6 +330,7 @@ figcaption {
 
 }
 
+
 .about-us-list {
   display: flex;
   flex-direction: column;
@@ -338,9 +339,11 @@ figcaption {
   margin-left: 300px
 }
 
+/*
 .about-us-list span {
   font-weight: bold;
 }
+*/
 
 .contact-bg {
   background-color: var(--blue);
@@ -358,7 +361,7 @@ figcaption {
   color: var(--white);
 }
 
-.contact-wrapper p {
+.contact-response {
   text-align: right;
 
 }
@@ -443,9 +446,10 @@ figcaption {
 main {
   min-height: 70vh;
   background-image: url(../GFX/background_blue.jpg.png);
+  background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
-  
+
 }
 
 
@@ -460,12 +464,11 @@ main {
 
 
 .signup-wrapper {
-  background-color: hotpink;
   display: grid;
   grid-template-columns: 100fr 80fr;
   text-align: center;
+  grid-gap: 3%;
 
-  
 }
 
 .signup-box {
@@ -475,8 +478,8 @@ main {
 }
 
 .signup-grid {
-  
-  
+
+
   display: grid;
   grid-template-areas:
   'fnavn fnavn enavn enavn'
@@ -485,7 +488,7 @@ main {
   "check agree agree agree"
   ;
   grid-gap: 10px;
-  
+
 }
 
 .signup-checkbox {
@@ -499,10 +502,18 @@ main {
 .item3 { grid-area: mail; }
 .item4 { grid-area: pass; }
 .item5 { grid-area: check; }
-.item6 { 
+.item6 {
   grid-area: agree;
   text-align: left;
 
+ }
+
+ .signup-text {
+   text-align: left;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   color: var(--white);
  }
 
 
@@ -532,7 +543,7 @@ main {
   grid-template-columns: 100fr 80fr;
   text-align: center;
 
-  
+
 }
 
 .login-box {
@@ -542,8 +553,8 @@ main {
 }
 
 .login-grid {
-  
-  
+
+
   display: grid;
   grid-template-areas:
   'bnavn bnavn bnavn bnavn'
@@ -552,7 +563,7 @@ main {
   "check agree agree agree"
   ;
   grid-gap: 10px;
-  
+
 }
 
 .login-checkbox {
@@ -567,12 +578,3 @@ main {
 
 
 /* #endregion */
-
-
-
-
-
-
-
-
-
