@@ -62,21 +62,15 @@ h2{
   font-size: 38px;
 }
 
-/* h3 {
-
+h3 {
+  font-weight: 400;
+  font-size: 32px;
 }
 
 h4 {
-
+  font-weight: 300;
+  font-size: 24px;
 }
-
-h5 {
-
-}
-
-h6 {
-
-} */
 
 p {
   font-size: 20px;
@@ -472,9 +466,11 @@ figcaption {
 }
 
 .signup-box {
-  padding: 50px 20px;
+  padding: 40px 20px;
   background-color: var(--grey);
-  border-radius: 8px;
+  border-radius: 25px;
+  width: 80%;
+  box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
 }
 
 .signup-grid {
@@ -497,16 +493,37 @@ figcaption {
 
 
 
-.item1 { grid-area: fnavn; }
-.item2 { grid-area: enavn; }
-.item3 { grid-area: mail; }
-.item4 { grid-area: pass; }
-.item5 { grid-area: check; }
-.item6 {
-  grid-area: agree;
-  text-align: left;
+.signup-item1 {
+  grid-area: fnavn;
+  border-radius: 6px;
+  padding: 4px 5px;
+  border: 1px solid var(--darkGrey);
+  font-size: 20px;
+}
 
- }
+.signup-item2 {
+  grid-area: enavn;
+  border-radius: 6px;
+  padding: 4px 5px;
+  border: 1px solid var(--darkGrey);
+  font-size: 20px;
+}
+
+.signup-item3 {
+  grid-area: mail;
+  border-radius: 6px;
+  padding: 4px 5px;
+  border: 1px solid var(--darkGrey);
+  font-size: 20px;
+}
+
+.signup-item4 {
+  grid-area: pass;
+  border-radius: 6px;
+  padding: 4px 5px;
+  border: 1px solid var(--darkGrey);
+  font-size: 20px;
+}
 
  .signup-text {
    text-align: left;
@@ -516,8 +533,70 @@ figcaption {
    color: var(--white);
  }
 
+ .signup-agreements {
+   font-size: 20px;
+ }
 
+ .signup-agreements-link {
+   color: var(--darkBlue);
+ }
 
+ .signup-birthday {
+   font-weight: normal;
+ }
+
+ .signup-date {
+   border-radius: 15px;
+   padding: 2px 3px;
+   border: 1px solid var(--darkGrey);
+   font-size: 20px;
+ }
+
+ .signup-month {
+   border-radius: 15px;
+   padding: 2px 3px;
+   border: 1px solid var(--darkGrey);
+   font-size: 20px;
+ }
+
+ .signup-year {
+   border-radius: 15px;
+   padding: 2px 3px;
+   border: 1px solid var(--darkGrey);
+   font-size: 20px;
+ }
+
+ .signup-male {
+   font-size: 20px;
+ }
+
+ .signup-woman {
+   font-size: 20px;
+ }
+
+ .signup-other {
+   font-size: 20px;
+ }
+
+.signup-accept {
+  font-size: 15px;
+}
+
+.signup-accept-conditions {
+  color: var(--darkBlue);
+}
+
+.signup-create-btn {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 28px;
+  text-decoration: none;
+  transition: .2s;
+  cursor: pointer;
+}
 
 
 /* #endregion */
@@ -539,20 +618,20 @@ figcaption {
   padding: 50px 0;
   text-transform: uppercase;
 }
+
 .login-headline span {
   color: var(--white);
 }
 
 .mit-id-btn {
   width: 50%;
-
 }
 
 .mit-id-btn a {
   padding: 5px 170px;
 
   border: none;
-  border-radius: 6px;
+  border-radius: 15px;
   background-color: var(--white);
   color: blue;
   font-weight: bold;
@@ -560,6 +639,7 @@ figcaption {
   text-decoration: none;
   transition: .2s;
   cursor: pointer;
+  box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
 }
 
 .login-wrapper {
@@ -571,8 +651,9 @@ figcaption {
 .login-box {
   padding: 30px 20px;
   background-color: var(--grey);
-  border-radius: 8px;
+  border-radius: 25px;
   width: 50%;
+  box-shadow: 5px 5px 30px -6px rgba(0,0,0,0.75);
 }
 
 .login-btn {
@@ -616,13 +697,12 @@ cursor: pointer;
   text-align: left;
 }
 
-
-
 .login-item1 {
   grid-area: bnavn;
   border-radius: 6px;
   padding: 4px 5px;
   border: 1px solid var(--darkGrey);
+  font-size: 20px;
 }
 
 .login-item2 {
@@ -630,6 +710,7 @@ cursor: pointer;
   border-radius: 6px;
   padding: 4px 5px;
   border: 1px solid var(--darkGrey);
+  font-size: 20px;
 }
 
 .login-logo {
