@@ -13,13 +13,15 @@
 
     --black: black;
 
-    /* --darkBlue: #4567A4;
+    --darkBlue: #4567A4;
+    /*
     --lightBlue: #005BFF;
     --veryLightBlue: #7FACFF; */
     --blue: #7FACFF;
     --orange: #f36459;
 
     --grey: #F2F2F2;
+    --darkGrey: #707070;
     --white: #fdfdfd;
 }
 
@@ -138,7 +140,6 @@ p {
 }
 
 .btn {
-
     padding: 10px 40px;
     border: none;
     border-radius: 6px;
@@ -443,13 +444,12 @@ figcaption {
 
 /* #region tilmelding */
 
-main {
+.signup-background {
   min-height: 70vh;
   background-image: url(../GFX/background_blue.jpg.png);
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
-
 }
 
 
@@ -526,6 +526,13 @@ main {
 
 /* #region login */
 
+.login-background {
+  min-height: 70vh;
+  background-image: url(../img/background_blue_login.png);
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
 
 .login-headline {
   text-align: center;
@@ -536,31 +543,70 @@ main {
   color: var(--white);
 }
 
+.mit-id-btn {
+  width: 50%;
+
+}
+
+.mit-id-btn a {
+  padding: 5px 170px;
+
+  border: none;
+  border-radius: 6px;
+  background-color: var(--white);
+  color: blue;
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: none;
+  transition: .2s;
+  cursor: pointer;
+}
 
 .login-wrapper {
-  background-color: hotpink;
   display: grid;
   grid-template-columns: 100fr 80fr;
   text-align: center;
-
-
 }
 
 .login-box {
-  padding: 50px 20px;
+  padding: 30px 20px;
   background-color: var(--grey);
   border-radius: 8px;
+  width: 50%;
+}
+
+.login-btn {
+  padding: 10px 156px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 28px;
+  text-decoration: none;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.create-btn {
+padding: 3px 60px;
+border: 3px solid var(--darkBlue);
+border-radius: 6px;
+color: var(--darkBlue);
+font-size: 28px;
+text-decoration: none;
+transition: .2s;
+cursor: pointer;
+}
+
+.login-forgotten {
+  color: blue;
 }
 
 .login-grid {
-
-
   display: grid;
   grid-template-areas:
   'bnavn bnavn bnavn bnavn'
-  'mail mail mail mail'
   "pass pass pass pass"
-  "check agree agree agree"
   ;
   grid-gap: 10px;
 
@@ -572,8 +618,23 @@ main {
 
 
 
-.login-item1 { grid-area: bnavn; }
-.login-item2 { grid-area: pass; }
+.login-item1 {
+  grid-area: bnavn;
+  border-radius: 6px;
+  padding: 4px 5px;
+  border: 1px solid var(--darkGrey);
+}
+
+.login-item2 {
+  grid-area: pass;
+  border-radius: 6px;
+  padding: 4px 5px;
+  border: 1px solid var(--darkGrey);
+}
+
+.login-logo {
+  width: 250px;
+}
 
 
 

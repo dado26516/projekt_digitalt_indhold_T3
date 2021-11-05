@@ -49,42 +49,51 @@
 
     </div>
 
-    <main>
+    <main class="login-background">
 
 
         <h1 class="login-headline"> <span>Støtteforeningen </span> Retshjælpen Fyns venner</h1>
 
 
-        <a class="btn" href="#">MitID</a>
+
         <article class="login-wrapper wrap">
 
-            <section class="login-box">
+            <section>
+              <div class="mit-id-btn">
+<a  href="#">Mit ID</a>
+              </div>
+
+              <br>
+
+              <div class="login-box">
 
                 <div class="login-grid">
 
-                    <input id="username" class="login-item1" type="text" placeholder="brugernavn eller email">
-                    <input id="password" class="login-item2" type="password" placeholder="password">
+                    <input id="username" class="login-item1" type="text" placeholder="Brugernavn eller email">
+                    <input id="password" class="login-item2" type="password" placeholder="Password">
 
                 </div>
 
                 <p id="error" style="color: red;"></p>
 
                 <div style="margin-top: 20px; margin-bottom: 10px;">
-                    <a id="login_btn" class="btn" onclick="checkLogin()">Login</a>
+                    <a class="login-btn" onclick="checkLogin()">Login</a>
                 </div>
-                <a href="#">Glemt adgangskode </a>
+                <a class="login-forgotten" href="#">Glemt adgangskode?</a>
 
                 <div>
                     <br>
                     <hr>
                     <br>
-                    <a class="btn" href="./tilmeld.html">Eller tilmeld her</a>
+                    <a class="create-btn" href="./tilmeld.html">Opret</a>
                 </div>
+
+              </div>
 
             </section>
 
             <section>
-                <h2>teksst</h2>
+                <img class="login-logo" src="../GFX/logo2.png" alt="logo">
 
             </section>
 
