@@ -1,3 +1,4 @@
+//kasper's javascript
 
 var nav = document.getElementById("sticky-nav")
 
@@ -10,10 +11,13 @@ var text6 = document.getElementById('navBtn6')
 
 window.onscroll = function scroll() {
 
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         nav.style.color = "white";
-        nav.style.backgroundColor = "white";
+        //
+        nav.style.backgroundColor = "rgba(253, 253, 253," + document.documentElement.scrollTop / 200 + ")" 
+        
         console.log("breakpoint")
+        console.log(document.documentElement.scrollTop / 200)
 
         text1.classList.add("black-text")
         text2.classList.add("black-text")
@@ -36,7 +40,7 @@ window.onscroll = function scroll() {
 
     }
     
-    
+
 
 
     //et fejlet forsøg på at lave variabler igennem et forloop for at optimere kode

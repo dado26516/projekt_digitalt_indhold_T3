@@ -23,6 +23,7 @@
     --grey: #F2F2F2;
     --darkGrey: #707070;
     --white: #fdfdfd;
+    --white: #fdfdfd;
 }
 
 .img-fluid, .w100 {
@@ -43,12 +44,12 @@ body {
   background-color: var(--grey);
 }
 
-header {
-  /* margin-top: 10vh; */
-}
-
 a {
   color: var(--black);
+}
+
+.white-bg {
+  background-color: var(--white);
 }
 
 h1{
@@ -159,6 +160,7 @@ p {
 #sticky-nav {
   position: fixed;
 	top: 0;
+  /* background-color: rgba(255, 255, 255, 0); */
   background-color: transparent;
   z-index: 2;
   height: 10vh;
@@ -477,6 +479,7 @@ figcaption {
   text-align: center;
   padding: 50px 0;
   text-transform: uppercase;
+  margin-left: 80px;
 }
 .signup-headline span {
   color: var(--white);
